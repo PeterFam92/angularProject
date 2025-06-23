@@ -1,0 +1,31 @@
+.main{
+    padding: 5rem 1rem;
+    background-color: #1abc9c;
+}
+.divider{
+    width: 150px;
+    height: 2px;
+    background: white;
+    position: relative;
+    padding-right: 60%;
+}
+.star{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1abc9c;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+.profile h1{font-size: 2rem;
+    margin-bottom: .5rem;
+
+}
+.profile p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.profile{
+    padding-left: 12%;
+}

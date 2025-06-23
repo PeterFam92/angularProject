@@ -1,0 +1,86 @@
+.form-container {
+  max-width: 100%!important;
+  
+  padding: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group input {
+  width: 100%!important;
+  padding: 14px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: none;
+  outline: none;
+}
+
+.form-group label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: #555;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.form-group label.floating {
+  top: -10px;
+  left: 8px;
+  font-size: 13px;
+  color: #007bff;
+  background: white;
+  padding: 0 4px;
+}
+
+button {
+  width: 40%!important;
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.main{
+    padding: 5rem 1rem;
+    
+}
+.divider{
+    width: 100px;
+    height: 2px;
+    background: #043c79!important;
+    position: relative;
+    padding-right: 50%;
+    left: 170px;
+     color: #043c79!important;
+}
+.star{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+     color: #043c79!important;
+    
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+.profile h1{font-size: 2rem;
+    margin-top: 4rem;
+    color: #043c79!important;
+    margin-right: 50px!important;
+
+}
+.profile p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.profile{
+    padding-left: 12%;
+}

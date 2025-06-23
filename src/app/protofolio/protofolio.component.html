@@ -1,0 +1,43 @@
+<div class="main d-flex-md flex-column align-content-center justify-content-center ">
+    <div class="profile mx-auto flex-column align-content-center d-flex ">
+        
+        <h1 class="fs-1 fw-bolder text-capitalize text-center  "> portfolio component</h1>
+        <div class="divider text-center mt-3">
+            <span class="star"> 
+                <i class="fa-solid fa-star-half-stroke text-black "></i>
+            </span>
+        </div>
+        <div class="d-flex justify-content-center ms-1 p-2">
+            <div class=" container  p-3">
+             <div class="row gy-1">
+  @for (img of images; track $index) {
+    <div class="col-md-4">
+      <div class="card image-card" (click)="toggleZoom(img)" [class.zoomed]="zoomedImg === img">
+        <div class="img-container position-relative">
+          <img [src]="img" alt="card" class="img-fluid w-100 h-100" />
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus fs-1 fw-bolder p-5 cross text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+                  
+                </div>
+                
+        </div>
+
+    </div>
+</div>
+
+@if(zoomedImg) {
+  <div class="zoomed-view" (click)="toggleZoom(null)">
+    <img
+      [src]="zoomedImg"
+      alt="Zoomed Image"
+      class="zoomed-image"
+      (click)="$event.stopPropagation()"
+ />
+  </div>
+}
