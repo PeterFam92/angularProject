@@ -17,8 +17,10 @@ export class ContactComponent {
   userEmail = '';
   userPassword = '';
 
-  isFilled(value: string): boolean {
-    return value.trim() !== '';
-  }
+
+  isFilled(value: any): boolean {
+  return String(value).trim() !== '';
+}
+
 }
 
