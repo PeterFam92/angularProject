@@ -11,10 +11,11 @@ import { FormsModule } from '@angular/forms';
 
 })
 export class ContactComponent {
+
   username = '';
-  userage = '';
-  useremail = '';
-  userpassword = '';
+  useAge = '';
+  userEmail = '';
+  userPassword = '';
 
   isFilled(value: string): boolean {
     return value.trim() !== '';
